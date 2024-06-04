@@ -2,11 +2,16 @@
     box-sizing: border-box;
 }
 
+.body {
+    margin: 0;
+}
+
 .netflix {
     min-height: 878px;
     padding: 42px 0 49px 80px;
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
+    background-size: 1900px;
 }
 
 .container .logo_nt {
@@ -18,9 +23,10 @@
 .logo_nt .nt_img {
     width: 156px;
     height: 48.3px;
-    border-right: 2px  solid white;
+    border-right: 2px solid white ;
     padding-right: 24px;
 }
+
 
 .logo_nt .nt_title {
     font-family: Kyiv*TypeTitling;
@@ -42,11 +48,12 @@
 
 }
 
-.header_avatar .avatar_img {
-    width: 90px;
-    height: 43px;
-    margin-right: 45px ;
-    margin-top: 5px;
+ .avatar_img {
+    color:#fff;
+    width: 60px;
+    height:40px ;
+    margin-right: 15px ;
+    margin-top: 30px;
 }
 
 .avatar_second_img {
@@ -174,7 +181,7 @@ span {
 .btn_text {
     width: 220px;
     height: 51px;
-    margin-top: 41px;
+    margin-top: 32px;
     margin-left: 20px;
     padding: 16px 29px 16px 29px;
     border-radius: 10px;
@@ -184,6 +191,7 @@ span {
     font-size: 16px;
     font-weight: 500;
     color: #fff;
+    text-decoration: none;
 }
 
 .btn_text:hover {
@@ -199,8 +207,12 @@ span {
 }
 
 .popular {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
     width: 620px;
-    height: 113px;
+    height: 75px;
+    align-items: center;
 }
 
 .popular .popular_text {
@@ -208,23 +220,14 @@ span {
     font-size: 18px;
     font-weight: 800;
     margin-top: 60px;
+    margin-bottom: 32px;
     color: #fff;
 }
 
-.popular_move{
-    display: flex;
-    justify-content: flex-end;
-}
+ .popular .popular_move{
+    padding-bottom: 5px;
+    width: 87px;
 
-.arrow1 {
-    width: 35px;
-    height: 35px;
-}
-
-.arrow2 {
-    width: 35px;
-    height: 35px;
-    margin-left: 7px;
 }
 
 .recomend {
@@ -258,4 +261,41 @@ span {
 .f5 {
     width: 130px;
     height: 180px;
+}
+
+.dcr {
+    text-decoration: none;
+}
+
+.age{
+    position:fixed;
+    width: 124px;
+    height: 50px;
+    padding-top: 20px;
+    background-color: gray;
+    text-align: center;
+    right: 0px;
+    bottom:103px;
+    border-left: 25px solid #d40d1f;
+}
+
+.arrok{
+    width: 90px;
+    border: 2px solid white;
+    color:white;
+    border-radius: 50px;
+    padding: 10px;
+}
+
+.arrok:hover {
+    background-color:gray ;
+    transition: 1s all;
+}
+
+.star {
+    color:gold;
+}
+
+.star_ful{
+    color:white; 
 }
